@@ -1,7 +1,7 @@
 //test.js
 
 function findWaldo(arr, found) {
-  arr.forEach(function(i){
+  arr.forEach(function(v, i){
     if (arr[i] === "Waldo") {
      found(i);   // execute callback
     };
