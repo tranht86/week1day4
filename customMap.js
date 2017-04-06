@@ -10,11 +10,14 @@ the callback function.*/
 
 var words = ["ground", "control", "to", "major", "tom"];
 
-function map(arr, word) {
-  arr.forEach (function(v, i) {
-    return v.length
-  })
-}
+function map(arr, callback) {
+  output_array = [];
+  arr.forEach(function(element) {
+    output_array.push(callback(element));
+  });
+  return output_array;
+};
+
 
 /*var letterCount = words.map(function(x) {
    return x.length
